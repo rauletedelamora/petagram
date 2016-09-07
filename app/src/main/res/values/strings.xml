@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Petagram</string>
+    <string name="nombreMascota">Lisa</string>
+    <string name="cantLikes">5</string>
 </resources>
