@@ -10,6 +10,13 @@
         layout="@layout/actionbar">
     </include>
 
+    <TextView
+        android:id="@+id/txtContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtContacto"
+        android:textSize="@dimen/txtContacto"/>
+
     <android.support.design.widget.TextInputLayout
         android:id="@+id/til_nombre"
         android:layout_width="match_parent"

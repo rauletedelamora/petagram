@@ -4,4 +4,8 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="corner_radius_cardview">4dp</dimen>
     <dimen name="nombreMascotaCV">20dp</dimen>
+    <dimen name="txtContacto">15dp</dimen>
+    <dimen name="fotoPerfil_margin">5dp</dimen>
+    <dimen name="tamañoletra_perfil">20dp</dimen>
+
 </resources>

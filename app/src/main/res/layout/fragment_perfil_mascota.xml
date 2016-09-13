@@ -13,7 +13,7 @@
         android:layout_height="160dp"
         android:layout_gravity="center_horizontal|center_vertical"
         android:src="@drawable/fotoperfil"
-        android:layout_margin="5dp"/>
+        android:layout_margin="@dimen/fotoPerfil_margin"/>
 
     <TextView
         android:id="@+id/nombreMascota"
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:text="@string/nombreMascota"
         android:textAlignment="center"
-        android:textSize="20dp"
+        android:textSize="@dimen/tamañoletra_perfil"
         android:textStyle="bold"/>
 
     <android.support.v7.widget.RecyclerView
