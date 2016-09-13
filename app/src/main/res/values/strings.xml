@@ -2,4 +2,12 @@
     <string name="app_name">Petagram</string>
     <string name="nombreMascota">Lisa</string>
     <string name="cantLikes">5</string>
+    <string name="txtAbout">Desarrollado por <b>Raul Mora</b> \n en conjunto con <b>COURSERA</b>. \n Cúcuta-Colombia 2016</string>
+    <string name="nombrecontacto">Nombre de Contacto: </string>
+    <string name="correo">Correo: </string>
+    <string name="mensaje">Mensaje: </string>
+    <string name="botonEnviar">Enviar mensaje</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

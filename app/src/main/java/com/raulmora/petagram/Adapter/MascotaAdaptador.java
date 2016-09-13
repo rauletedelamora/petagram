@@ -1,4 +1,4 @@
-package com.raulmora.petagram;
+package com.raulmora.petagram.adapter;
 
 import android.app.Activity;
 import android.support.v7.widget.RecyclerView;
@@ -10,9 +10,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
+import com.raulmora.petagram.pojo.Mascota;
+import com.raulmora.petagram.R;
 
-import static android.widget.Toast.LENGTH_SHORT;
+import java.util.ArrayList;
 
 /**
  * Created by Raul Mora on 05/09/2016.

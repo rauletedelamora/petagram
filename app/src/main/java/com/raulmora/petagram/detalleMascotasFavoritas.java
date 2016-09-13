@@ -1,7 +1,6 @@
 package com.raulmora.petagram;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -9,13 +8,12 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
+import com.raulmora.petagram.adapter.MascotaAdaptador;
+import com.raulmora.petagram.pojo.Mascota;
 
 import java.util.ArrayList;
 
-public class detalleMascotasFavoritas extends AppCompatActivity {
+public class DetalleMascotasFavoritas extends AppCompatActivity {
 
     ArrayList<Mascota> mascotas;
     private RecyclerView listaMascotas;
@@ -60,7 +58,7 @@ public class detalleMascotasFavoritas extends AppCompatActivity {
     }
 
     public void irActividadDetalleMascota(View view) {
-        Intent intent = new Intent(this, detalleMascotasFavoritas.class);
+        Intent intent = new Intent(this, DetalleMascotasFavoritas.class);
         startActivity(intent);
     }
 

@@ -1,4 +1,4 @@
-package com.raulmora.petagram;
+package com.raulmora.petagram.pojo;
 
 /**
  * Created by Raul Mora on 05/09/2016.

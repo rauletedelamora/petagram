@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.raulmora.petagram.MainActivity">
 
-    <include android:id="@+id/miActionBar"
-        layout="@layout/actionbar">
-    </include>
+    <!--Construccion de la AppBar: Contendrá uan ToolBar y un ViewPareg-->
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <!--ToolBar customizada desde actionbar.xml-->
+        <include android:id="@+id/miActionBar"
+            layout="@layout/actionbar">
+        </include>
+        <!--TabLayout que se mostrará en la cabecera de cada ViewPager-->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.design.widget.TabLayout>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvMascotas"
+    </android.support.design.widget.AppBarLayout>
+
+    <!---->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/miActionBar"/>
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-</RelativeLayout>
+    </android.support.v4.view.ViewPager>
+
+</android.support.design.widget.CoordinatorLayout>
