@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.raulmora.petagram.bd.ConstructorMascotas;
 import com.raulmora.petagram.pojo.Mascota;
 import com.raulmora.petagram.R;
 
@@ -37,18 +38,22 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
 
     //Asocia cada elemento de la lista con cada view
     @Override
-    public void onBindViewHolder(MascotaViewHolder mascotaViewHolder, int position) {
+    public void onBindViewHolder(final MascotaViewHolder mascotaViewHolder, int position) {
         final Mascota mascota = mascotas.get(position);
         mascotaViewHolder.ibFoto.setImageResource(mascota.getImgMascota());
         mascotaViewHolder.tvNombreCV.setText(mascota.getNombre());
-        mascotaViewHolder.tvcantLikesCV.setText(mascota.getCantidadLikes());
+        mascotaViewHolder.tvcantLikesCV.setText(String.valueOf(mascota.getCantidadLikes()));
 
         mascotaViewHolder.btnLike.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(activity,"Diste like a "+mascota.getNombre(), Toast.LENGTH_LONG).show();
+                ConstructorMascotas constructor = new ConstructorMascotas(activity);
+                constructor.darLikeMascota(mascota);
+                mascotaViewHolder.tvcantLikesCV.setText(constructor.obtenerLikesMascota(mascota));
             }
         });
+
     }
 
     //Cantidad de elementos que contiene mi lista

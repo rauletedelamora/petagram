@@ -4,7 +4,6 @@ package com.raulmora.petagram.fragment;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -54,11 +53,11 @@ public class PerfilMascotaFragment extends Fragment {
 
         mascotas = new ArrayList<Mascota>();
 
-        mascotas.add(new Mascota(R.drawable.beagle1,"","5"));
-        mascotas.add(new Mascota(R.drawable.beagle2,"","4"));
-        mascotas.add(new Mascota(R.drawable.beagle3,"","5"));
-        mascotas.add(new Mascota(R.drawable.beagle4,"","3"));
-        mascotas.add(new Mascota(R.drawable.beagle5,"","5"));
+        mascotas.add(new Mascota(R.drawable.beagle1,"",5));
+        mascotas.add(new Mascota(R.drawable.beagle2,"",4));
+        mascotas.add(new Mascota(R.drawable.beagle3,"",5));
+        mascotas.add(new Mascota(R.drawable.beagle4,"",7));
+        mascotas.add(new Mascota(R.drawable.beagle5,"",8));
     }
 
 }

@@ -4,14 +4,20 @@ package com.raulmora.petagram.pojo;
  * Created by Raul Mora on 05/09/2016.
  */
 public class Mascota {
+    private int id;
     private int imgMascota;
     private String nombre;
-    private String cantidadLikes;
+    private int cantidadLikes;
 
-    public Mascota(int imgMascota, String nombre, String cantidadLikes) {
+    public Mascota(int imgMascota, String nombre, int cantidadLikes) {
+
         this.imgMascota = imgMascota;
         this.nombre = nombre;
         this.cantidadLikes = cantidadLikes;
+    }
+
+    public Mascota() {
+
     }
 
     public int getImgMascota() {
@@ -30,11 +36,17 @@ public class Mascota {
         this.nombre = nombre;
     }
 
-    public String getCantidadLikes() {
-        return cantidadLikes;
+    public int getCantidadLikes() {  return cantidadLikes; }
+
+    public void setCantidadLikes(int cantidadLikes) {
+        this.cantidadLikes = cantidadLikes;
     }
 
-    public void setCantidadLikes(String cantidadLikes) {
-        this.cantidadLikes = cantidadLikes;
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
